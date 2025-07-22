@@ -43,7 +43,30 @@ html {
     p { 
     max-width: 600px; 
       }
-    
+
+    nav {
+    display: flex;
+    gap: 0.5rem; /* spazio tra i pulsanti */
+    flex-wrap: wrap; /* va a capo se spazio esaurito */
+    margin-bottom: 2rem;
+      }
+
+    nav button {
+    background-color: #f7717d; /* rosa corallo della palette */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+      }
+
+  nav button:hover {
+    background-color: #890620; /* bordo bordeaux scuro al passaggio */
+      }
+
   </style>
   
 </head>
@@ -53,28 +76,6 @@ html {
   <p>This is the official website of the research project Gender and Language, by Laura Vela-Plo, Marta De Pedis and Marina Ortega-Andrés. Information and materials soon to appear.</p>
 
     <!-- Indice / menù di navigazione -->
-  nav {
-  display: flex;
-  gap: 0.5rem; /* spazio tra i pulsanti */
-  flex-wrap: wrap; /* va a capo se spazio esaurito */
-  margin-bottom: 2rem;
-}
-
-nav button {
-  background-color: #f7717d; /* rosa corallo della palette */
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-family: 'EB Garamond', serif;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav button:hover {
-  background-color: #890620; /* bordo bordeaux scuro al passaggio */
-}
 
   <nav>
   <button onclick="location.href='#project'">The project</button>
