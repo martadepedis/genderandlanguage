@@ -28,6 +28,7 @@
 
     
     body { 
+      padding-top: 4rem; /* spazio per non coprire il menu */
       font-size: 1rem;  /* = 16px */
       font-family: 'EB Garamond', serif;
       background-color: #d8d0c1;
@@ -50,10 +51,19 @@
       }
 
     nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d8d0c1; /* beige della palette */
     display: flex;
+    justify-content: center;
     gap: 0.5rem; /* spazio tra i pulsanti */
+    padding: 0.5rem;
+    border-bottom: 2px solid #114b5f;
+    z-index: 1000; /* per stare sopra il contenuto */
     flex-wrap: wrap; /* va a capo se spazio esaurito */
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem;*/
       }
 
     nav button {
@@ -77,8 +87,6 @@
 </head>
 <body>
   
-  <h1>Welcome!</h1>
-  <p>This is the official website of the research project Gender and Language, by Laura Vela-Plo, Marta De Pedis and Marina Ortega-Andrés. Information and materials soon to appear.</p>
 
     <!-- Indice / menù di navigazione -->
 
@@ -133,6 +141,10 @@
     <h2>Dissemination</h2>
     <p>We've been on the news! ...</p>
   </section>
+  
+  
+  <h1>Welcome!</h1>
+  <p>This is the official website of the research project Gender and Language, by Laura Vela-Plo, Marta De Pedis and Marina Ortega-Andrés. Information and materials soon to appear.</p>
 
   
 </body>
